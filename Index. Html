@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sridhar — Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: url('https://images.unsplash.com/photo-1518770660439-4636190af475') no-repeat center center/cover;
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: -1;
+    }
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .typing {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #00f5d4;
+      border-right: 3px solid #00f5d4;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: typing 3s steps(25) forwards, blink 0.7s infinite;
+      display: inline-block;
+    }
+    @keyframes typing { from { width: 0; } to { width: 100%; } }
+    @keyframes blink { 50% { border-color: transparent; } }
+    nav {
+      text-align: center;
+      padding: 0.5rem;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+    nav a:hover { color: #00f5d4; }
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem 1rem;
+      flex: 1;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1.5rem;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      backdrop-filter: blur(5px);
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      background: rgba(255, 255, 255, 0.2);
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: rgba(0, 0, 0, 0.7);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Sridhar</h1>
+  <div class="typing">Aspiring Ethical Hacker</div>
+  <p>B.E. CSE (Cyber Security) | SVHEC, Erode</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#goals">Goals</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<main>
+  <section id="about" class="card">
+    <h2>About Me</h2>
+    <p>Hello! I’m <strong>Sridhar</strong> from Erode. I’m currently studying B.E. CSE (Cyber Security) at SVHEC.  
+       I’m passionate about technology and determined to become a skilled ethical hacker.</p>
+  </section>
+
+  <section id="goals" class="card">
+    <h2>My Goals</h2>
+    <ul>
+      <li>Master network security and penetration testing</li>
+      <li>Learn advanced ethical hacking techniques</li>
+      <li>Contribute to cyber security research</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="card">
+    <h2>Contact Me</h2>
+    <p>Email: <strong>Sri224546@gmail.com</strong></p>
+    <p>Phone: <strong>9342690139</strong></p>
+    <p>GitHub: <strong><a href="https://github.com/sridhar13" target="_blank" style="color:#00f5d4;">github.com/sridhar13</a></strong></p>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Sridhar — SVHEC, Erode
+</footer>
+
+</body>
+</html>
